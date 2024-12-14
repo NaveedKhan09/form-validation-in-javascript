@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation in JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern+Guides&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+                <h2>USER INFORMATION</h2>
+                <div class="portion">
+                    <label for="Name">Username</label>
+                    <input type="text" id="Name" placeholder="Username">
+                    <p class="message" id="Username">Username message</p>
+                </div>
+                <div class="portion">
+                    <label for="email-id">Email</label>
+                    <input type="email" id="email-id" placeholder="e.g: xxxx@gmail.com">
+                    <p class="message" id="Email">Username message</p>
+                </div>
+                <div class="portion">
+                    <label for="passward">Password</label><br>
+                    <input type="password" id="passward" placeholder="Enter a passsword">
+                    <p class="message" id="pass">passsword message</p>
+                </div>
+                <div class="portion">
+                    <label for="DoB">Date of Birth</label><br>
+                    <input type="date" id="DoB" placeholder="Enter date-of-birth">
+                    <p class="message" id="dobMessage">Username message</p>
+                </div>
+                <div class="portion">
+                    <label for="gender">Gender</label><br>
+                    <input list="Gender" id="gender" placeholder="Select Your Gender">
+                    <p class="message" id="genDisplay">Username message</p>
+                    <datalist id="Gender">
+                        <option value="Male">
+                        <option value="Female">
+                        <option value="Other">
+                    </datalist>
+                </div>
+                <button type="submit" id="submit">Submit</button>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
